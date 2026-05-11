@@ -1,0 +1,21 @@
+git config --global user.name " " - 이름 지정
+git config --global user.email " " - email 지정
+
+git폴더 만든 후
+cd/c/git - c에 있는 git폴더로 이동
+
+git폴더로 이동 후
+git init - git 저장소(git working tree) 로 설정함
+git branch - branch의 저장되어 있는 이름을 알려준다.
+
+git 저장소로 설정 후
+git remote add origin https://github.com/Park1994/Park.git - 내 workspace 와 git remote 연동함
+
+git add. - git working tree(branch) 에 있는 모든 파일을 저장
+git add [file_name] - git working tree(branch)에 있는 특정 파일만 저장
+git status - staging area에 저장된 파일 상태 조회
+
+git commit -m 'upload file' - staging area에 저장된 파일을 local depository에 commit함, commit 시에는 협업에서 변경 사항을 간단히 알려줄 					수 있는 메시지를 함께 작성해 주어야 한다.
+git log - commit 로그를 조회
+
+git push origin [branch] - local repository에 commit 되어 있는 파일들을 push 하여 업데이트 한다.
