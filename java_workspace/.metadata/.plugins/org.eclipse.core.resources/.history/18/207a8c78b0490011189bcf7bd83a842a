@@ -1,0 +1,11 @@
+package com.collectionexam;
+
+import java.util.*;
+public class CollectionExam02 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.collectionexam;
+
+public class CollectionExam10 {
+
+	public void input() {
+		
+	}
+	
+	public void quiz() {
+		
+	}
+	
+	public void finish() {
+		
+	}
+	
+	public static void main(String[] args) {
+
+		
+	}
+
+}

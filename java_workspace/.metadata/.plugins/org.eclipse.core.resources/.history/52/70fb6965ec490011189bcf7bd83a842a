@@ -1,0 +1,16 @@
+package com.collectionexam;
+
+public class MyStack<T> implements IStack<T> {
+
+	@Override
+	public T pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public boolean push(T ob) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

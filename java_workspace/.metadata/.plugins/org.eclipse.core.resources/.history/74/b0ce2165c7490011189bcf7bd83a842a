@@ -1,0 +1,13 @@
+package com.collectionexam;
+
+import java.util.*;
+public class CollectionExam05 {
+
+	private Scanner sc = new Scanner(System.in);
+	private ArrayList<Student> st = new ArrayList<Student>();
+	public static void main(String[] args) {
+
+		
+	}
+
+}

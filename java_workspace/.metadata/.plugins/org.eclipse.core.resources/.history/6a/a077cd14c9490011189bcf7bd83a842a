@@ -1,0 +1,40 @@
+package com.collectionexam;
+
+import java.util.*;
+public class CollectionExam05 {
+
+	private Scanner sc = new Scanner(System.in);
+	private ArrayList<Student> st = new ArrayList<Student>();
+	
+	public void input() {
+		System.out.println("학생이름, 학과, 학번, 학점평균을 입력하세요.");
+		for(int i = 0; i < 4; i++) {
+			System.out.print(">>");
+			String name = sc.next();
+			String department = sc.next();
+			String id = sc.next();
+			double grade = sc.nextDouble();
+			
+			Student student = new Student(name, department, id, grade);
+			st.add(student);
+		}
+	}
+	
+	public void search() {
+		
+	}
+	
+	public void print() {
+		
+	}
+	
+	public void run() {
+		
+	}
+	
+	public static void main(String[] args) {
+
+		
+	}
+
+}

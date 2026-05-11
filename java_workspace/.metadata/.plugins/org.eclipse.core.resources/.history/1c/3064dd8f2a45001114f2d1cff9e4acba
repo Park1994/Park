@@ -1,0 +1,12 @@
+package com.collectionex;
+
+import java.util.*;
+
+public class VectorEx04 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

@@ -1,0 +1,69 @@
+package com.collectionexam;
+
+/*
+ * 	문제)
+	이름과 학점을 5개 입력받아 맵에 저장하고 장학생 선발 기준을 입력받아 장학생 명단을 출력하는 프로그램을 구현하시오.
+	장학생 선발 기준: 학점이 3.2이상인 학생
+	
+	출력결과
+	글로벌장학금관리시스템입니다.
+	이름과 학점: 가길동 3.1
+	이름과 학점: 나길동 2.4
+	이름과 학점: 다길동 4.3
+	이름과 학점: 라길동 3.9
+	이름과 학점: 마길동 4.0
+	장학생 선발 기준 학점: 3.2
+	장학생 명단: 다길동 라길동 마길동
+ */
+
+import java.util.*;
+public class CollectionExam07 {
+
+	private String title;
+	private Scanner sc = new Scanner(System.in);
+	private HashMap<String, Double> map = new HashMap<String, Double>();
+	
+	public CollectionExam07(String title) {
+		this.title = title;
+	}
+	
+	public void input() {
+		System.out.println(title + "관리 시스템입니다.");
+		for(int i =0; i < 5; i++) {
+			System.out.print("이름과 학점: ");
+			String name = sc.next();
+			double score = sc.nextDouble();
+			
+			map.put(name, score);
+		}
+	}
+	
+	public void print() {
+		System.out.println("장학생 선발 기준 학점: ");
+		double baseline = sc.nextDouble();
+		
+		System.out.print("장학생 명단: ");
+		Set<String> kname = map.keySet();
+		Iterator<String> it = kname.iterator();
+		
+		while(it.hasNext()) {
+			String name = it.next();
+			double score = map.get(name);
+			if(score > baseline) {
+				System.out.print(name + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	public void run() {
+		input();
+		print();
+	}
+	
+	public static void main(String[] args) {
+		
+		new CollectionExam07("글로벌인").run();
+	}
+
+}

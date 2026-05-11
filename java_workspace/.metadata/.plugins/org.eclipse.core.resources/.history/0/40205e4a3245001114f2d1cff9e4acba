@@ -1,0 +1,11 @@
+package com.vscore;
+
+public class ScoreMain {
+
+	public static void main(String[] args) throws IOException {
+		char ch ;
+		Score score = new ScoreImpl();
+		
+	}
+
+}

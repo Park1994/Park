@@ -1,0 +1,37 @@
+package com.collectionexam;
+
+/*
+ * 	문제)
+	Vector를 이용하여 강수량의 평균을 유지 관리하는 프로그램을 구현하시오.
+	강수량을 입력하여 벡터에 추가하고 현재까지 입력된 모든 강수량과 평균을 출력하시오.
+	Vector<Integer> v = new Vector<>();
+
+	강수량 입력: 5
+	5
+	강수량 입력: 80
+	5 80
+	강수량 입력: 53
+	5 80 53
+	강수량 입력: 22
+	5 80 53 22
+	현재 평균 40
+	강수량 입력: 0
+ */
+
+import java.util.*;
+public class CollectionExam04 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		Vector<Integer> v = new Vector<>();
+		
+		while(true) {
+			System.out.print("강수량 입력: ");
+			int n = sc.nextInt();
+			v.add(n);
+		}
+	}
+
+}

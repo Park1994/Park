@@ -1,0 +1,39 @@
+package com.collectionexam;
+
+import java.util.*;
+public class CollectionExam10 {
+
+	private Vector<Nation> v = new Vector<Nation>();
+	private Scanner sc = new Scanner(System.in);
+	
+	public CollectionExam10() {
+	
+		v.add(new Nation("멕시코", "멕시코시티"));
+	}
+	
+	public void error(String msg) {
+		System.out.println(msg);
+	}
+	
+	public void run() {
+		
+	}
+	
+	public void input() {
+		
+	}
+	
+	public void quiz() {
+		
+	}
+	
+	public void finish() {
+		
+	}
+	
+	public static void main(String[] args) {
+
+		
+	}
+
+}

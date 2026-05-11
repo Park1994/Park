@@ -1,0 +1,146 @@
+package com.mscore;
+
+import java.util.*;
+
+public class ScoreImpl implements Score {
+
+	private Scanner sc = new Scanner(System.in);
+	// HashMap: 키가 정렬되지 않음
+	private Map<String, ScoreVO> map = new HashMap<>();
+	
+	@Override
+	public void insert() {
+		System.out.println("........자료 추가........");
+		String hak;
+		System.out.print("학번: ");
+		hak = sc.next();
+		
+		if(map.containsKey(hak)) {
+			
+		}
+		
+		
+		// 학번이 존재하지 않으면
+		ScoreVO vo = new ScoreVO();
+		vo.setHak(hak);
+		System.out.print("이름: ");
+		vo.setName(sc.next());
+		System.out.println("생년월일: ");
+		vo.setBirth(sc.next());
+		System.out.println("국어: ");
+		vo.setKor(sc.nextInt());
+		System.out.println("영어: ");
+		vo.setEng(sc.nextInt());
+		System.out.println("수학: ");
+		vo.setMat(sc.nextInt());
+		
+		list.add(vo);
+		System.out.println("데이터 등록이 완료되었습니다.");
+	}
+
+	@Override
+	public void update() {
+
+		System.out.println("........자료 수정........");
+		String hak;
+		System.out.print("수정할 학번: ");
+		hak = sc.next();
+		
+		ScoreVO vo = readScore(hak); // 입력한 학번이 list에 있는 학번과 같으면
+		if(vo == null) { // 학번이 이미 존재한다면
+			System.out.println("입력하신 학번이 존재하지 않습니다. \n");
+			return;
+		}
+		
+		System.out.print("이름: ");
+		vo.setName(sc.next());
+		System.out.println("생년월일: ");
+		vo.setBirth(sc.next());
+		System.out.println("국어: ");
+		vo.setKor(sc.nextInt());
+		System.out.println("영어: ");
+		vo.setEng(sc.nextInt());
+		System.out.println("수학: ");
+		vo.setMat(sc.nextInt());
+		System.out.println("데이터 수정이 완료되었습니다.");
+	}
+
+	@Override
+	public void delete() {
+
+		System.out.println("........자료 삭제........");
+		String hak;
+		System.out.print("삭제할 학번: ");
+		hak = sc.next();
+		
+		ScoreVO vo = readScore(hak); // 입력한 학번이 list에 있는 학번과 같으면
+		if(vo == null) { // 학번이 이미 존재한다면
+			System.out.println("입력하신 학번이 존재하지 않습니다. \n");
+			return;
+		}
+		
+		list.remove(vo);
+		System.out.println("데이터 삭제가 완료되었습니다.");
+	}
+
+	@Override
+	public void listAll() {
+
+		System.out.println("\n 전체 출력.........");
+		Iterator<ScoreVO> it = list.iterator();
+		
+		while(it.hasNext()) {
+			ScoreVO vo = it.next();
+			System.out.println(vo.toString());
+		}
+		System.out.println();
+	}
+
+	@Override
+	public void searchHak() {
+
+		System.out.println("........학번 검색........");
+		String hak;
+		System.out.print("검색할 학번: ");
+		hak = sc.next();
+		
+		ScoreVO vo = readScore(hak);
+		
+		if(vo != null) {
+			System.out.println(vo.toString());
+		}
+		System.out.println();
+	}
+
+	@Override
+	public void searchName() {
+
+		System.out.println("........이름 검색........");
+		String name;
+		System.out.print("검색할 이름: ");
+		name = sc.next();
+		
+		for(ScoreVO vo : list) {
+			if(vo.getName().startsWith(name)) {
+				System.out.println(vo);
+			}
+		}
+		
+		System.out.println();
+	}
+	
+	public ScoreVO readScore(String hak) {
+		ScoreVO vo = null;
+		for(ScoreVO temp : list) {
+			if(temp.getHak().equals(hak)) {
+				vo = temp;
+				break;
+			}
+		}
+		return vo;
+	}
+	
+	
+	
+
+}

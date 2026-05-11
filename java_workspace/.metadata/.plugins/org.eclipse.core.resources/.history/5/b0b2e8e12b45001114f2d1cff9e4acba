@@ -1,0 +1,8 @@
+package com.vscore;
+
+public class ScoreVO {
+
+	private String hak;
+	private String name;
+	private String birth;
+}

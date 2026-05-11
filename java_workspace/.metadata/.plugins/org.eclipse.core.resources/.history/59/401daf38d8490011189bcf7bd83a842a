@@ -1,0 +1,36 @@
+package com.collectionexam;
+
+import java.util.*;
+public class CollectionExam06 {
+
+	private Scanner sc = new Scanner(System.in);
+	private HashMap<String, Location> map = new HashMap<>();
+	
+	// 입력
+	public void input() {
+		
+	}
+	
+	// 출력
+	public void print() {
+		
+	}
+	
+	// 검색
+	public void search() {
+		
+	}
+	
+	// 실행
+	public void run() {
+		input();
+		print();
+		search();
+	}
+	
+	public static void main(String[] args) {
+
+		new CollectionExam06().run();
+	}
+
+}

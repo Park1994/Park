@@ -1,0 +1,17 @@
+package com.setexam;
+
+import java.util.*;
+
+class Person {
+	String name;
+	int age;
+	
+}
+public class HashSetEx02 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

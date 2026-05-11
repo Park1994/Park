@@ -1,0 +1,11 @@
+package com.mapex;
+
+import java.util.*;
+public class HashMapEx03 {
+
+	public static void main(String[] args) {
+
+		String[] data = {"A", "K", "A", "K", "D", "K", "A", "K"};
+	}
+
+}

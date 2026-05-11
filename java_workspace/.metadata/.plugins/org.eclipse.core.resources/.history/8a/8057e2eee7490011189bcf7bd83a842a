@@ -1,0 +1,13 @@
+package com.collectionexam;
+
+import java.util.*;
+public class CollectionExam08 {
+
+	private String title;
+	private Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
+
+		HashMap<>
+	}
+
+}

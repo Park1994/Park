@@ -1,0 +1,22 @@
+package com.setexam;
+
+import java.util.*;
+public class TreeSetEx01 {
+
+	public static void main(String[] args) {
+
+		TreeSet set = new TreeSet();
+		
+		String from = "b";
+		String to = "d";
+		
+		set.add("abc");
+		set.add("alien");
+		set.add("bat");
+		set.add("car");
+		set.add("Car");
+		set.add("cat");
+		set.add("disc");
+	}
+
+}

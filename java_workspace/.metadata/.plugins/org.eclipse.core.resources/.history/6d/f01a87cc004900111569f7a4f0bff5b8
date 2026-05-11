@@ -1,0 +1,16 @@
+package com.mapex;
+
+/*
+ * 	TreeMap
+ * 	-정렬된 
+ */
+
+import java.util.*;
+public class TreeMapEx01 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

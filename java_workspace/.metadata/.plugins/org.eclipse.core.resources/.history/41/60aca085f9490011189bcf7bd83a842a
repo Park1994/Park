@@ -1,0 +1,19 @@
+package com.collectionexam;
+
+public interface IStack<T> {
+
+	public MyStack() {
+		l = new ArrayList<T>();
+	}
+	
+	@Override
+	public T pop() { // 스택에서 제거
+		if(l.size() == 0)
+			return null;
+		else
+			return l.remove(0);
+	}
+	
+	boolean push(T ob);
+
+}

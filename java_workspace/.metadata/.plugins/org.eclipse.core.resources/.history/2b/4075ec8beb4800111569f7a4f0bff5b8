@@ -1,0 +1,11 @@
+package com.setexam;
+
+import java.util.*;
+public class HashSetEx04 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.mapex;
+
+import java.util.*;
+public class HashMapEx02 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

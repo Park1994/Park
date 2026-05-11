@@ -1,0 +1,13 @@
+package com.collectionexam;
+
+public class Student {
+
+	private String name;
+	private String department;
+	private String id;
+	private double grade;
+	
+	public Student(String name, String department, String id, double grade) {
+		
+	}
+}

@@ -1,0 +1,14 @@
+package com.mapex;
+
+/*
+ * 	Map 인터페이스
+ */
+
+public class HashMapEx01 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

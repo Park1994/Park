@@ -1,0 +1,32 @@
+package com.collectionexam;
+
+import java.util.*;
+public class CollectionExam08 {
+
+	private String title;
+	private Scanner sc = new Scanner(System.in);
+	private HashMap<String, Integer> map = new HashMap<String, Integer>();
+	
+	public CollectionExam08(String title) {
+
+		this.title = title;
+	}
+	
+	public void input() {
+		
+	}
+	
+	public void print() {
+		
+	}
+	
+	public void run() {
+		
+	}
+	
+	public static void main(String[] args) {
+
+	
+	}
+
+}

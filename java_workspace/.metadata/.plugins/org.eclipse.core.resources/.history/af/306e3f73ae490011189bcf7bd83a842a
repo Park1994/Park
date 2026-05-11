@@ -1,0 +1,14 @@
+package com.collectionexam;
+
+import java.util.*;
+public class CollectionEx01 {
+
+	private static final String[] a = {};
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		Vector<Object> v = new Vector<>();
+	}
+
+}

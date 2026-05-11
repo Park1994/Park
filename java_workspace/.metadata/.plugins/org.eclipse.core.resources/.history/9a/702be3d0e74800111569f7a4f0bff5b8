@@ -1,0 +1,15 @@
+package com.setexam;
+
+class Person2 {
+	String name;
+	int age;
+}
+
+public class HashSetEx03 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

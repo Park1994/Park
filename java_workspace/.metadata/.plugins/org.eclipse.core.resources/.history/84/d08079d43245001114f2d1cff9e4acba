@@ -1,0 +1,18 @@
+package com.vscore;
+
+import java.io.*;
+
+public class ScoreMain {
+
+	public static void main(String[] args) throws IOException {
+		char ch ;
+		Score score = new ScoreImpl();
+		
+		while(true) {
+			do {
+				System.out.print("1. 추가 2. 수정 3. 삭제 4. 전체 출력 5. 학번 검색 6. 이름 검색 7. 종료 : ");
+			}
+		}
+	}
+
+}
