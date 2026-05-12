@@ -19,3 +19,6 @@ git commit -m 'upload file' - staging area에 저장된 파일을 local deposito
 git log - commit 로그를 조회
 
 git push origin [branch] - local repository에 commit 되어 있는 파일들을 push 하여 업데이트 한다.
+
+commit 메시지 작성 규칙
+https://ivory-room.tistory.com/93
