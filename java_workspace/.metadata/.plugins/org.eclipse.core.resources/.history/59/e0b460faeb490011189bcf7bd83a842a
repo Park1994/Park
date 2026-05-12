@@ -1,5 +1,0 @@
-package com.collectionexam;
-
-public interface IStack {
-
-}

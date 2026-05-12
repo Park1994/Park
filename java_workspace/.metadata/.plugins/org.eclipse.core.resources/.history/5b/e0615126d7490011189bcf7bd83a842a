@@ -1,8 +1,0 @@
-package com.collectionexam;
-
-public class Location {
-
-	private String city;
-	private double longitude;
-	private double latitude;
-}
